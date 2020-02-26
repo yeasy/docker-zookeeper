@@ -25,7 +25,7 @@ WORKDIR $ZOOKEEPER_HOME
 
 # can call your customized command here
 HEALTHCHECK --interval=5m --timeout=3s --start-period=1s --retries=3 \
- CMD exit 0
+    CMD exit 0
 
 # Start a zk service for the kafka to use
 #CMD ["bash", "/tmp/start_zk.sh"]

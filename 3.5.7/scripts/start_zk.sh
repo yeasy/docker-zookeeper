@@ -18,9 +18,9 @@ echo "autopurge.purgeInterval=1" | tee -a  ${ZK_CONF}
 echo "quorumListenOnAllIPs=true" | tee -a  ${ZK_CONF}
 echo "4lw.commands.whitelist=*" | tee -a  ${ZK_CONF}
 
-echo "server.1=zk_zookeeper1:4181:3181" | tee -a  ${ZK_CONF}
-echo "server.2=zk_zookeeper2:4181:3181" | tee -a  ${ZK_CONF}
-echo "server.3=zk_zookeeper3:4181:3181" | tee -a  ${ZK_CONF}
+echo "server.1=${ZK_HOST1:-zk_zookeeper1}:4181:3181" | tee -a  ${ZK_CONF}
+echo "server.2=${ZK_HOST2:-zk_zookeeper2}:4181:3181" | tee -a  ${ZK_CONF}
+echo "server.3=${ZK_HOST3:-zk_zookeeper3}:4181:3181" | tee -a  ${ZK_CONF}
 
 echo "Current configurations:"
 grep -v "^#" ${ZK_CONF}
