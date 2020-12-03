@@ -7,6 +7,7 @@ If you wanna create a zookeeper MVP quickly, go to [zookeeper compose file](http
 # Supported tags and respective Dockerfile links
 
 * [`latest` (latest/Dockerfile)](https://github.com/yeasy/docker-zookeeper/blob/master/Dockerfile): Tracking latest release.
+* [`3.6.2` (3.6.2/Dockerfile)](https://github.com/yeasy/docker-zookeeper/blob/master/3.6.2/Dockerfile): Build for the 3.6.2 release.
 * [`3.5.7` (3.5.7/Dockerfile)](https://github.com/yeasy/docker-zookeeper/blob/master/3.5.7/Dockerfile): Build for the 3.5.7 release.
 * [`3.5.6` (3.5.6/Dockerfile)](https://github.com/yeasy/docker-zookeeper/blob/master/3.5.6/Dockerfile): Build for the 3.5.6 release.
 
@@ -16,7 +17,7 @@ For more information about this image and its history, please see the relevant m
 Docker image with zookeeper.
 
 # How to use this image?
-The docker image is auto built at [https://registry.hub.docker.com/u/yeasy/zookeeper/](https://registry.hub.docker.com/u/yeasy/zookeeper/).
+The docker image is auto built at [https://hub.docker.com/repository/docker/yeasy/zookeeper](https://hub.docker.com/repository/docker/yeasy/zookeeper).
 
 ## In Dockerfile
 ```sh
