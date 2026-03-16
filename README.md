@@ -7,6 +7,7 @@ If you wanna create a zookeeper MVP quickly, go to [zookeeper compose file](http
 # Supported tags and respective Dockerfile links
 
 * [`latest` (latest/Dockerfile)](https://github.com/yeasy/docker-zookeeper/blob/master/Dockerfile): Tracking latest release.
+* [`3.9.5` (3.9.5/Dockerfile)](https://github.com/yeasy/docker-zookeeper/blob/master/3.9.5/Dockerfile): Build for the 3.9.5 release.
 * [`3.6.2` (3.6.2/Dockerfile)](https://github.com/yeasy/docker-zookeeper/blob/master/3.6.2/Dockerfile): Build for the 3.6.2 release.
 * [`3.5.7` (3.5.7/Dockerfile)](https://github.com/yeasy/docker-zookeeper/blob/master/3.5.7/Dockerfile): Build for the 3.5.7 release.
 * [`3.5.6` (3.5.6/Dockerfile)](https://github.com/yeasy/docker-zookeeper/blob/master/3.5.6/Dockerfile): Build for the 3.5.6 release.
@@ -29,8 +30,15 @@ FROM yeasy/zookeeper:latest
 $ docker run yeasy/zookeeper
 ```
 
+You can customize cluster peers using:
+
+* `ZK_ID`
+* `ZK_HOST1`
+* `ZK_HOST2`
+* `ZK_HOST3`
+
 # Which image is based on?
-The image is built based on [anapsix/alpine-java](https://hub.docker.com/r/anapsix/alpine-java) image.
+The image is built based on [eclipse-temurin:21-jre-jammy](https://hub.docker.com/_/eclipse-temurin).
 
 # What has been changed?
 ## Install zookeeper
